@@ -1,0 +1,29 @@
+/* Common styles for all screen sizes */
+
+.dispalybackground{
+    background-color: #f2f4f7;
+    
+}
+.card {
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+.dispalyLink{
+    color: black;
+}
+
+.dispalyLink:active{
+    color: black;
+}
+
+  
+  /* Adjustments for mobile screens */
+  @media (max-width: 768px) {
+    .card {
+      padding: 10px;
+    }
+  }
+  

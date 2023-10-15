@@ -1,0 +1,45 @@
+/* Common styles for all screen sizes */
+
+.button{
+   margin-left:"900px"
+}
+.mobile{
+    margin-right: 250px;
+}
+.card {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .card-title {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Adjustments for mobile screens */
+  @media (max-width: 768px) {
+    .card {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    /* Center the "Save" button */
+    .btn-secondary {
+      margin: 0 auto;
+      display: block;
+    }
+  
+    /* Adjust other styles for mobile here */
+  }
+  

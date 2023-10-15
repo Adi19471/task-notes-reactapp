@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Displaytask from "./components/Task/Displaytask";
+import Createtask from "./components/Task/Createtask";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Taskinformation from "./components/Task/Taskinformation";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+       <Route path="/"   element={<Displaytask />} ></Route>
+       <Route path="/create"   element={<Createtask />} ></Route>
+       <Route path="/view/:id"   element={<Taskinformation />} ></Route>
+
+         
+        </Routes>
+      </BrowserRouter>
+    </>
   );
-}
+};
 
 export default App;
